@@ -1,5 +1,58 @@
 # Changelog
 
+## [1.8.5](https://github.com/ProseMirror/prosemirror-tables/compare/v1.8.4...v1.8.5) (2025-12-24)
+
+
+### Bug Fixes
+
+* improve cell selection with fallback strategy for merged cells ([#323](https://github.com/ProseMirror/prosemirror-tables/issues/323)) ([d141168](https://github.com/ProseMirror/prosemirror-tables/commit/d1411689ef3cf5871e80ce641e916755b4c29e08))
+
+## [1.8.4](https://github.com/ProseMirror/prosemirror-tables/compare/v1.8.3...v1.8.4) (2025-12-22)
+
+
+### Bug Fixes
+
+* prevent cell selection on context menu open ([#324](https://github.com/ProseMirror/prosemirror-tables/issues/324)) ([92cd56b](https://github.com/ProseMirror/prosemirror-tables/commit/92cd56bdc5353a5e15625fa586140301a64546e8))
+
+## [1.8.3](https://github.com/ProseMirror/prosemirror-tables/compare/v1.8.2...v1.8.3) (2025-12-03)
+
+
+### Bug Fixes
+
+* update repository URL in package.json ([#320](https://github.com/ProseMirror/prosemirror-tables/issues/320)) ([cdd85e6](https://github.com/ProseMirror/prosemirror-tables/commit/cdd85e6b23dbf1dc2c6de53ed986bf5163b486c0))
+
+## [1.8.2](https://github.com/ProseMirror/prosemirror-tables/compare/v1.8.1...v1.8.2) (2025-12-03)
+
+
+### Bug Fixes
+
+* improve cell selection logic in merge cells ([#311](https://github.com/ProseMirror/prosemirror-tables/issues/311)) ([6ac5448](https://github.com/ProseMirror/prosemirror-tables/commit/6ac54486189a51ecefa3b43d1e29c6c4069552cf))
+
+## [1.8.1](https://github.com/ProseMirror/prosemirror-tables/compare/v1.8.0...v1.8.1) (2025-08-27)
+
+
+### Bug Fixes
+
+* keep table cell type when moving a row ([#301](https://github.com/ProseMirror/prosemirror-tables/issues/301)) ([98cdf2d](https://github.com/ProseMirror/prosemirror-tables/commit/98cdf2d07e99acbd0e6aecfcc6f8acba2f0e7e65))
+
+## [1.8.0](https://github.com/ProseMirror/prosemirror-tables/compare/v1.7.1...v1.8.0) (2025-08-27)
+
+
+### Features
+
+* add more commands and utils ([#296](https://github.com/ProseMirror/prosemirror-tables/issues/296)) ([bf4fc63](https://github.com/ProseMirror/prosemirror-tables/commit/bf4fc6332425f1d1689c29ecc4b70d722053dec8))
+
+  New commands:
+
+  - `moveTableRow`
+  - `moveTableColumn`
+
+  New utils:
+
+  - `findTable`
+  - `findCellRange`
+  - `findCellPos`
+
 ## [1.7.1](https://github.com/ProseMirror/prosemirror-tables/compare/v1.7.0...v1.7.1) (2025-04-17)
 
 

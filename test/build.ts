@@ -1,8 +1,10 @@
-import { Node, ResolvedPos, Schema } from 'prosemirror-model';
+import type { Node, ResolvedPos } from 'prosemirror-model';
+import { Schema } from 'prosemirror-model';
 import { schema as baseSchema } from 'prosemirror-schema-basic';
 import { NodeSelection, TextSelection } from 'prosemirror-state';
 import { builders, eq } from 'prosemirror-test-builder';
-import { CellSelection, cellAround, tableNodes } from '../src/';
+
+import { CellSelection, cellAround, tableNodes } from '../src';
 
 export type TaggedNode = Node & { tag: Record<string, number> };
 
@@ -36,8 +38,8 @@ const nodeBuilders = builders(schema, {
 
 export const { doc, table, tr, p, td, th } = nodeBuilders;
 
-export function c(colspan: number, rowspan: number) {
-  return td({ colspan, rowspan }, p('x'));
+export function c(colspan: number, rowspan: number, text = 'x') {
+  return td({ colspan, rowspan }, p(text));
 }
 
 export const c11 = c(1, 1);
@@ -47,8 +49,8 @@ export const cCursorBefore = td(p('<cursor>x'));
 export const cAnchor = td(p('x<anchor>'));
 export const cHead = td(p('x<head>'));
 
-export function h(colspan: number, rowspan: number) {
-  return th({ colspan, rowspan }, p('x'));
+export function h(colspan: number, rowspan: number, text = 'x') {
+  return th({ colspan, rowspan }, p(text));
 }
 export const h11 = h(1, 1);
 export const hEmpty = th(p());
